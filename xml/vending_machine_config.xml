@@ -1,0 +1,5 @@
+<VendingMachine>
+    <Drink name="Coca Cola" price="2.5" quantity="10" />
+    <Drink name="Pepsi" price="2.0" quantity="8" />
+    <Drink name="Sprite" price="1.5" quantity="5" />
+</VendingMachine>
