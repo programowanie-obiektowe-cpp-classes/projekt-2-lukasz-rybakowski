@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
-#include "D:\CPP\projekt-2-lukasz-rybakowski\include\tinyxml2.h" // Biblioteka tinyxml2
+#include "tinyxml2.h" // Biblioteka tinyxml2
 
 using namespace tinyxml2;
 
@@ -108,7 +108,7 @@ public:
             throw std::runtime_error("Musisz wrzucić więcej monet!");
         }
 
-        // Zmniejsz ilość napojów i odejmij cenę od balansu
+        
         selectedDrink.setQuantity(selectedDrink.getQuantity() - 1);
         balance -= selectedDrink.getPrice();
 

@@ -9,11 +9,15 @@ set(SOURCE_FILES
     src/main.cpp
     src/tinyxml2.cpp  # Zakładając, że plik tinyxml2.cpp znajduje się w folderze src
 )
-
+set(HPP_FILES 
+    include/tinyxml2.h  
+)
 # Dodaj pliki nagłówkowe TinyXML
-include_directories("${CMAKE_SOURCE_DIR}/path/to/tinyxml") # Aktualizuj tę ścieżkę do lokalizacji TinyXML
-
-add_executable(cpp-project ${SOURCE_FILES})
+ # Aktualizuj tę ścieżkę do lokalizacji TinyXML
+ set(xml_FILES 
+ xml/vending_machine_config.xml
+)
+add_executable(cpp-project ${SOURCE_FILES} ${HPP_FILES} ${xml_FILES})
 
 # Ustawienie standardu C++ na C++23
 set_target_properties(cpp-project PROPERTIES CXX_STANDARD 23)
